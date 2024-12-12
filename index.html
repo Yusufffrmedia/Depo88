@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Online</title>
+    <style>
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #120638;
+            color: white;
+        }
+
+                a {
+          color: white; /* Ubah warna teks link menjadi putih */
+          text-decoration: none; /* Opsional: Hilangkan garis bawah */
+        }
+        
+        a:hover {
+          color: lightgray; /* Opsional: Ubah warna saat hover */
+        }
+          
+          
+          
+        .header {
+            background: rgba(26, 26, 26, 0.9);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(5px);
+        }
+
+        .logo {
+            font-size: 24px;
+            color: #ffd700;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .balance-info {
+            background: rgba(42, 42, 42, 0.8);
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main-content {
+            margin-top: 120px;
+            padding: 10px;
+            padding-bottom: 80px; /* Menambah padding bottom agar konten tidak tertutup bottom nav */
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .game-item {
+            background: rgba(42, 42, 42, 0.8);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            position: relative;
+        }
+
+        .game-item img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .game-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .game-title {
+            padding: 8px;
+            font-size: 12px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(26, 26, 26, 0.9);
+            backdrop-filter: blur(5px);
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            padding: 10px 0;
+        }
+
+        .nav-item {
+            text-align: center;
+            color: #888;
+            font-size: 12px;
+        }
+
+        .nav-item.active {
+            color: #ffd700;
+        }
+
+        .nav-icon {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .login-buttons {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn-login {
+            background: #ffd700;
+            color: #000;
+        }
+
+        .btn-register {
+            background: #ff4444;
+            color: white;
+        }
+
+        /* Tambahan efek hover untuk game item */
+        .game-item {
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .game-item:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">SLOT88</div>
+        <div class="balance-info">
+            <span>Balance: Rp 0</span>
+            <span>ID: Guest</span>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="login-buttons">
+            <button class="btn btn-login">LOGIN</button>
+            <button class="btn btn-register">DAFTAR</button>
+        </div>
+
+        <div class="game-grid">
+    <!-- Game items dengan link -->
+    <a href="https://sweetbonanza.com" target="_blank" class="game-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwsYvyzKPvmWCcryBFf3l0BSB5-q2ZYBOfbA&usqp=CAU" alt="Sweet Bonanza">
+        <div class="game-title">Sweet Bonanza</div>
+    </a>
+    <a href="https://gatesofolympus.com" target="_blank" class="game-item">
+        <img src="zeus10000.webp" alt="Gates of Olympus">
+        <div class="game-title">Gates of Olympus</div>
+    </a>
+    <a href="https://demogamesfree-asia.pragmaticplay.net/gs2c/html5Game.do?extGame=1&symbol=vs20starlightx&gname=Starlight%20Princess%201000&jurisdictionID=99&lobbyUrl=js://window.close()&mgckey=stylename@generic~SESSION@15292033-84df-468d-8cf3-bbc34c607faa" target="_blank" class="game-item">
+        <img src="starlight.webp" alt="Starlight Princess">
+        <div class="game-title">Starlight Princess</div>
+    </a>
+    <a href="https://wildwestgold.com" target="_blank" class="game-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtjGLR1aPhmKikMEAzOJ75pfWFQlMGW7D9iQ&usqp=CAU" alt="Wild West Gold">
+        <div class="game-title">Wild West Gold</div>
+    </a>
+    <a href="https://aztecgems.com" target="_blank" class="game-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg1xRAEQU5xhFM80-a9GCL8UCr7CYrObIR47gNC1-yMQ6YJXoyCJcG0Frq&s=10" alt="Aztec Gems">
+        <div class="game-title">Aztec Gems</div>
+    </a>
+    <a href="https://greatrhino.com" target="_blank" class="game-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9oymCUHqeBxNBgV4A4fDHWWGmvxttAszsA&usqp=CAU" alt="Great Rhino">
+        <div class="game-title">Great Rhino</div>
+    </a>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <div class="nav-item active">
+            <div class="nav-icon">🎮</div>
+            Game
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon">💰</div>
+            Deposit
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon">📤</div>
+            Withdraw
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon">🎁</div>
+            Bonus
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon">👤</div>
+            Profile
+        </div>
+    </div>
+</body>
+</html>
